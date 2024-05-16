@@ -1,0 +1,772 @@
+*,
+::after::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --VeryDarkBlue: hsl(243, 87%, 12%);
+  --DesaturatedBlue: hsl(238, 22%, 44%);
+
+  --BrightBlue: hsl(224, 93%, 58%);
+  --ModerateCyan: hsl(170, 45%, 43%);
+
+  --LightGrayishBlue: hsl(240, 75%, 98%);
+  --LightGray: hsl(0, 0%, 75%);
+  --white: hsl(360, 100, 100);
+  font-size: 11px;
+  text-align: center;
+  --familyHead: Raleway;
+  --familyP: preconnect;
+  color: hsl(228, 45%, 44%);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  margin-left: 2rem;
+  margin-right: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.logo {
+  background-image: url('./images/logo.svg');
+  width: 120px;
+  height: 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo img {
+  display: none;
+}
+.details ul {
+  display: flex;
+  margin-right: 1rem;
+}
+.details ul li {
+  justify-content: space-between;
+}
+.details ul li a {
+  color: var(--LightGray);
+  font-size: 2rem;
+  margin-left: 16px;
+}
+.details ul li a:hover {
+  color: var(--ModerateCyan);
+}
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-content: center;
+}
+.AllYourFile {
+  margin-top: 15rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.AllRight img {
+  width: 600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AllLeft {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 10rem;
+}
+.AllLeft h1 {
+  font-size: 2.5rem;
+  font-family: Raleway;
+  width: 450px;
+  text-align: start;
+  color: var(--VeryDarkBlue);
+}
+.AllLeft p {
+  font-family: preconnect;
+  font-size: 1.5rem;
+  text-align: start;
+  width: 450px;
+  color: var(--VeryDarkBlue);
+  line-height: 2.5rem;
+}
+label {
+  display: none;
+}
+form {
+  align-items: start;
+  width: 450px;
+}
+form input {
+  width: 300px;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  font-family: Raleway;
+  border-radius: 5px;
+  border: 1px solid var(--LightGray);
+}
+form input::placeholder {
+  padding: 1rem;
+  font-family: preconnect;
+  color: var(--LightGray);
+}
+
+.btnGetStarted {
+  border: 5px;
+  width: 140px;
+  height: 3rem;
+  background: var(--BrightBlue);
+  color: white;
+  font-size: 1.5rem;
+  font-family: Raleway;
+  border-radius: 5px;
+  border: 1px solid var(--BrightBlue);
+}
+.bannerCuvre {
+  margin-top: 8rem;
+  background: url('./images/bg-curve-desktop.svg');
+  width: 100%;
+  height: 10rem;
+}
+/* part two */
+.StayProductive {
+  background: var(--LightGrayishBlue);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
+
+.StayRight img {
+  width: 600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+}
+.StayLeft {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 10rem;
+}
+.StayLeft h1 {
+  font-size: 2.8rem;
+  font-family: Raleway;
+  width: 450px;
+  text-align: start;
+  color: var(--VeryDarkBlue);
+}
+.StayLeft p {
+  font-family: preconnect;
+  font-size: 1.5rem;
+  text-align: start;
+  width: 350px;
+  color: var(--VeryDarkBlue);
+  line-height: 2.5rem;
+}
+.howFylo {
+  margin-left: auto;
+  margin-right: auto;
+}
+.howFylo ul li {
+  display: flex;
+}
+.howFylo ul li p {
+  margin-top: -0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+.howFylo ul li a {
+  color: var(--ModerateCyan);
+  margin-left: -4rem;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+.postcard {
+  background: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.postcard img {
+  width: 20px;
+  margin-top: 2rem;
+  margin-left: -20rem;
+}
+.postcard p {
+  width: 250px;
+  font-family: var(--familyP);
+  font-size: 1.3rem;
+}
+article img {
+  border-radius: 50%;
+  width: 50px;
+  height: 3rem;
+}
+article h3 {
+  font-family: var(--familyHead);
+  color: var(--VeryDarkBlue);
+  margin-top: -2.5rem;
+  margin-left: -10rem;
+}
+article p {
+  font-family: var(--familyP);
+  margin-left: 2.5rem;
+  margin-top: -1.5rem;
+  font-weight: 200;
+}
+/* part three */
+.GetEarly {
+  background: var(--DesaturatedBlue);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.Getleft {
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 2rem;
+}
+.Getleft h1 {
+  font-size: 2.8rem;
+  font-family: Raleway;
+  width: 450px;
+  text-align: start;
+}
+.Getleft p {
+  font-family: preconnect;
+  font-size: 1.5rem;
+  text-align: start;
+  width: 400px;
+  color: white;
+  line-height: 2.5rem;
+}
+.Getright {
+  grid-column: 2;
+  grid-row: 1;
+}
+.form {
+  align-items: start;
+  width: 450px;
+  display: block;
+}
+.GetForm {
+  width: 450px;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-family: Raleway;
+  border-radius: 5px;
+  border: 1px solid var(--LightGray);
+}
+
+.Getbtn {
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px;
+  width: 200px;
+  height: 4rem;
+  background: var(--BrightBlue);
+  color: white;
+  font-size: 1.5rem;
+  font-family: Raleway;
+  border-radius: 5px;
+  border: 1px solid var(--BrightBlue);
+  margin-top: 2rem;
+  display: block;
+}
+.footer {
+  padding: 10rem 2rem;
+  background: var(--VeryDarkBlue);
+  color: white;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.one {
+  grid-column: 1;
+  grid-column: 1;
+  width: 100px;
+}
+.one img:nth-last-child(2) {
+  width: 100px;
+  color: white;
+  height: 50px;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.one ul li {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.one ul li span {
+  margin-left: 8px;
+}
+.one ul li a {
+  display: flex;
+  color: white;
+}
+.one ul li a span {
+  margin-left: 8px;
+}
+.two ul li {
+  margin-bottom: 2rem;
+  width: 50px;
+}
+.three ul li {
+  margin-bottom: 2rem;
+  width: 50px;
+}
+.four ul {
+  display: flex;
+}
+.four ul li a img {
+  width: 40px;
+  color: blue;
+  margin-left: 2rem;
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+  .AllRight img {
+    width: 400px;
+    height: 400px;
+  }
+  .details ul li a {
+    color: var(--LightGray);
+    font-size: 1.8rem;
+  }
+  .StayRight img {
+    width: 400px;
+    height: 400px;
+  }
+  .form {
+    align-items: start;
+    width: 400px;
+    display: block;
+  }
+  .GetForm {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-family: Raleway;
+    border-radius: 5px;
+    border: 1px solid var(--LightGray);
+  }
+  .Getbtn {
+    border: 5px;
+    width: 220px;
+    height: 4rem;
+    background: var(--BrightBlue);
+    color: white;
+    font-size: 1.5rem;
+    font-family: Raleway;
+    border-radius: 5px;
+    border: 1px solid var(--BrightBlue);
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .logo {
+    width: 100px;
+    height: 30px;
+  }
+  .details ul li a {
+    font-size: 1.5rem;
+  }
+  .AllYourFile {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    display: block;
+  }
+  .AllRight img {
+    width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .AllLeft {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+  .AllLeft h1 {
+    width: 350px;
+    text-align: center;
+    color: var(--VeryDarkBlue);
+  }
+  .AllLeft p {
+    font-family: preconnect;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 350px;
+    color: var(--VeryDarkBlue);
+  }
+  .form {
+    align-items: start;
+    width: 350px;
+  }
+  form input {
+    margin-top: 2rem;
+    width: 350px;
+    height: 3rem;
+  }
+
+  .btnGetStarted {
+    margin-top: 2rem;
+    width: 350px;
+    height: 4rem;
+  }
+  /* this is part two */
+  .StayProductive {
+    background: var(--LightGrayishBlue);
+    display: block;
+  }
+  .StayRight img {
+    width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .StayLeft {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+  .StayLeft h1 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    width: 350px;
+    text-align: center;
+    color: var(--VeryDarkBlue);
+  }
+  .StayLeft p {
+    font-family: preconnect;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 350px;
+    color: var(--VeryDarkBlue);
+  }
+  .howFylo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .howFylo ul li {
+    display: flex;
+  }
+  .howFylo ul li p {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0.1rem;
+    margin-left: -8rem;
+  }
+  .howFylo ul li a {
+    color: var(--ModerateCyan);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+  }
+  .postcard {
+    background: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  .postcard img {
+    width: 20px;
+    margin-top: 2rem;
+    margin-left: -20rem;
+  }
+  .postcard p {
+    width: 300px;
+    font-family: var(--familyP);
+    font-size: 1.3rem;
+    text-align: start;
+  }
+
+  article img {
+    border-radius: 50%;
+    width: 50px;
+    height: 3rem;
+  }
+  article h3 {
+    font-family: var(--familyHead);
+    color: var(--VeryDarkBlue);
+    margin-top: -2.5rem;
+    margin-left: -10rem;
+  }
+  article p {
+    font-family: var(--familyP);
+    margin-left: 5rem;
+    margin-top: -1.5rem;
+    font-weight: 200;
+  }
+  /* part three */
+  .GetEarly {
+    background: var(--DesaturatedBlue);
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .Getleft {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+
+  .Getleft h1 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    width: 350px;
+    text-align: center;
+  }
+  .Getleft p {
+    font-family: preconnect;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 350px;
+  }
+  .Getright {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .form {
+    align-items: start;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .GetForm {
+    width: 350px;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-family: Raleway;
+    border-radius: 5px;
+    border: 1px solid var(--LightGray);
+  }
+
+  .Getbtn {
+    border: 5px;
+    width: 350px;
+    height: 4rem;
+    background: var(--BrightBlue);
+    color: white;
+    font-size: 1.5rem;
+    font-family: Raleway;
+    border-radius: 5px;
+    border: 1px solid var(--BrightBlue);
+    margin-top: 2rem;
+    display: block;
+  }
+  /* this is four */
+  .footer {
+    padding: 10rem 2rem;
+    background: var(--VeryDarkBlue);
+    color: white;
+    padding-left: 1rem;
+    display: block;
+  }
+  .footerimg {
+    align-content: start;
+    justify-content: start;
+    width: 200px;
+    color: white;
+  }
+  .one {
+    margin-right: auto;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .logo {
+    width: 80px;
+    height: 23px;
+  }
+  .AllRight img {
+    width: 450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .AllLeft {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+  .AllLeft h1 {
+    width: 350px;
+    text-align: center;
+    color: var(--VeryDarkBlue);
+  }
+  .AllLeft p {
+    font-family: preconnect;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 350px;
+    color: var(--VeryDarkBlue);
+  }
+  form {
+    align-items: start;
+    width: 350px;
+  }
+  form input {
+    margin-top: 2rem;
+    width: 350px;
+    height: 3rem;
+  }
+
+  .btnGetStarted {
+    margin-top: 2rem;
+    width: 350px;
+    height: 4rem;
+  }
+  .StayRight img {
+    width: 450px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 50px;
+    height: 13px;
+  }
+
+  .AllRight img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .AllLeft {
+    width: 300px;
+  }
+  .AllLeft h1 {
+    width: 300px;
+  }
+  .AllLeft p {
+    width: 300px;
+  }
+  .form {
+    width: 300px;
+  }
+  form input {
+    width: 300px;
+  }
+
+  .btnGetStarted {
+    width: 300px;
+  }
+  /* this is part two */
+
+  .StayRight img {
+    width: 300px;
+    height: 300px;
+  }
+  .StayLeft {
+    width: 300px;
+  }
+  .StayLeft h1 {
+    width: 280px;
+  }
+  .StayLeft p {
+    width: 280px;
+  }
+
+  .howFylo ul li p {
+    width: 90px;
+    height: 4rem;
+    margin-top: -0.2rem;
+  }
+  .howFylo ul li a {
+    color: var(--ModerateCyan);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+  }
+
+  .postcard {
+    width: 250px;
+    height: 280px;
+  }
+  .postcard img {
+    width: 20px;
+  }
+  .postcard p {
+    width: 240px;
+  }
+
+  /* part three */
+
+  .Getleft {
+    width: 280px;
+  }
+
+  .Getleft h1 {
+    font-weight: 600;
+    width: 250px;
+  }
+  .Getleft p {
+    font-size: 1.5rem;
+
+    width: 250px;
+  }
+
+  .form {
+    align-items: start;
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .GetForm {
+    width: 250px;
+  }
+
+  .Getbtn {
+    width: 250px;
+  }
+}
